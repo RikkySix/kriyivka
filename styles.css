@@ -1,15 +1,21 @@
+:root {
+    --mark: white;
+    --bkground: black;
+    --bkground2: darkblue;
+}
+
 body {
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--bkground);
+    color: var(--mark);
 }
 
-h1 {
-    
+h2 {
+    border-bottom: 2px solid var(--mark);
 }
 
-#container {
-    border: 2px solid white;
-    background-color: black;
+.container {
+    border: 2px solid var(--mark);
+    background-color: var(--bkground);
     max-width: 40%;
     text-align: center;
     float: right;
@@ -25,7 +31,12 @@ a:visited,
 a:link,
 a:active {
     text-decoration: none;
-    color: white;
+    color: var(--mark);
 }
 
+#bookmarks {
+    border: 1px solid var(--mark);
+    background-color: var(--bkground2);
+    width: 30%;
+}
 
